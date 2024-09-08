@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+
+        </div>
+        <div class="inputbox">
+            <div class="input1">
+                <h2>Direction</h2>
+                <select name="Direction" id="direction">
+                    <option value="to top">Top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right top">Right Top</option>
+                    <option value="to right bottom">Right Bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top">Left Top</option>
+                    <option value="to left bottom">Left Bottom</option>
+                    <option value="to bottom">Bottom</option>
+                </select>
+            </div>
+            <div class="input2">
+                <h2>Colors</h2>
+                <input type="color" name="color1" id="color1" value="#ff0000">
+                <input type="color" name="color2" id="color2" value="#0000ff">
+            </div>
+        </div>
+        <div class="code">
+            <textarea name="code" id="code" rows="2" readonly>background:linear-gradient(to top,#ff0000,#0000ff);</textarea>
+        </div>
+        <div class="buttons">
+            <button id="refresh">Refresh color</button>
+            <button id="copycode">Copy Code</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
